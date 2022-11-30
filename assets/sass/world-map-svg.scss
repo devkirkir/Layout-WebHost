@@ -1,0 +1,89 @@
+$dark: #333645;
+$red: #F8646C;
+$lightGrey: #565969;
+
+@keyframes pulse {
+    from {
+        stroke-width: 0;
+        stroke: $red;
+        opacity: 1;
+    }
+
+    to {
+        stroke-width: 15px;
+        opacity: -1;
+    }
+}
+
+.st0 {
+    fill: #444757;
+    stroke-width: 0;
+    transform: translateX(-10px);
+}
+
+.st1 {
+    fill: #444757;
+    stroke-width: 0;
+}
+
+.st2 {
+    fill: #444757;
+    stroke-width: 0;
+}
+
+.st3 {
+    fill: #444757;
+    stroke-width: 0;
+    transform: translateX(-10px);
+}
+
+.st4 {
+    fill: #444757;
+    stroke-width: 0;
+}
+
+.st5 {
+    fill: #444757;
+}
+
+.st66 {
+    fill: $red;
+}
+
+.city-pulse {
+    animation: pulse 2s linear infinite;
+}
+
+.toronto, .moscow, .pekin, .paris, .buenos {
+    .tip {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+
+        .connection {
+
+            .connection-em {
+                fill:#04C275;
+            }
+        }
+
+        rect {
+            fill: #fff;
+        }
+
+        text {
+            fill: $dark;
+            font-size: 10px;
+            font-weight: 700;
+        }
+    }
+
+    &:hover .tip {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+#arrow {
+    fill: #fff;
+}
